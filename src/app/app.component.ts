@@ -8,8 +8,12 @@ import { GoogleMapsPage } from '../pages/google-maps/google-maps.page';
 import { HomePage } from '../pages/home/home.page';
 import { SlideBoxPage } from '../pages/slide-box/slide-box.page';
 import { WordpressListPage } from '../pages/wordpress/list/wordpress.list.page';
-import { Form1Page } from '../pages/form1/form1.page';
-import { Form2Page } from '../pages/form2/form2.page';
+import { NewSurveyPage } from '../pages/new-survey/new-survey';
+import { SearchSurveysPage } from '../pages/search-surveys/search-surveys';
+import { ConfigPage } from '../pages/config/config';
+
+// import { Form1Page } from '../pages/form1/form1.page';
+// import { Form2Page } from '../pages/form2/form2.page';
 
 @Component({
 	templateUrl: 'app.html'
@@ -31,8 +35,9 @@ export class MyApp {
 		// set our app's pages
 		this.pages = [
 			{ title: 'Home', component: HomePage, icon: 'home' },
-			{ title: 'Form 1', component: Form1Page, icon: 'football' },
-			{ title: 'Form 2', component: Form2Page, icon: 'film' },
+			{ title: 'Nova vistoria', component: NewSurveyPage, icon: 'eye' },
+			{ title: 'Vistorias', component: SearchSurveysPage, icon: 'search' },
+			{ title: 'Configurações', component: ConfigPage, icon: 'cog' },
 			{ title: 'Wordpress', component: WordpressListPage, icon: 'logo-wordpress' },
 			{ title: 'Slides', component: SlideBoxPage, icon: 'swap' },
 			{ title: 'Google maps', component: GoogleMapsPage, icon: 'map' },

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Nav } from 'ionic-angular';
 
-import { Form1Page } from '../form1/form1.page';
-import { Form2Page } from '../form2/form2.page';
+import { NewSurveyPage } from '../new-survey/new-survey';
+import { SearchSurveysPage } from '../search-surveys/search-surveys';
 import { GoogleMapsPage } from '../google-maps/google-maps.page';
+import { ConfigPage } from '../config/config';
 
 import { Tile } from './models/tile.model';
 import { EmailService } from '../../services/email.service';
@@ -54,15 +55,26 @@ export class HomePage {
 
 	private initTiles(): void {
 		this.tiles = [[{
-			title: 'Form 1',
+			title: 'Nova vistoria',
 			path: 'form1',
-			icon: 'football',
-			component: Form1Page
+			icon: 'eye',
+			component: NewSurveyPage
 		}, {
-			title: 'Form 2',
+			title: 'Vistorias',
 			path: 'form2',
-			icon: 'film',
-			component: Form2Page
+			icon: 'search',
+			component: SearchSurveysPage
+		}],
+		[{
+			title: 'Mapas',
+			path: 'form1',
+			icon: 'map',
+			component: GoogleMapsPage
+		}, {
+			title: 'Configurações',
+			path: 'form2',
+			icon: 'cog',
+			component: ConfigPage
 		}]];
 	}
 }

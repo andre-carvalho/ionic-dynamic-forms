@@ -10,7 +10,8 @@ import { AlertController } from 'ionic-angular';
 	templateUrl: 'form1.html',
 	providers: []
 })
-export class Form1Page {
+
+export class SurveyModel {
 	controls: ControlBase<any>[];
 	form: FormGroup;
 	submitted: any;

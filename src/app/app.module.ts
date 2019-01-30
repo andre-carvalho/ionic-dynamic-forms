@@ -13,7 +13,11 @@ import { SlideBoxModule } from '../pages/slide-box/slide-box.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { Form1Module } from '../pages/form1/form1.module';
 import { Form2Module } from '../pages/form2/form2.module';
+import { NewSurveyPageModule } from '../pages/new-survey/new-survey.module';
+import { SearchSurveysPageModule } from '../pages/search-surveys/search-surveys.module';
+import { ConfigPageModule } from '../pages/config/config.module';
 import { MyApp } from './app.component';
+import { StoreMidiaProvider } from '../providers/store-midia/store-midia';
 
 @NgModule({
 	declarations: [
@@ -31,7 +35,10 @@ import { MyApp } from './app.component';
 		SlideBoxModule,
 		WordpressModule,
 		Form1Module,
-		Form2Module
+		Form2Module,
+		NewSurveyPageModule,
+		SearchSurveysPageModule,
+		ConfigPageModule
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
@@ -39,7 +46,8 @@ import { MyApp } from './app.component';
 	],
 	providers: [
 		Config,
-		StatusBar
+		StatusBar,
+    StoreMidiaProvider
 	]
 })
 export class AppModule {

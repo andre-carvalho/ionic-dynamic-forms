@@ -11,7 +11,7 @@ import { AlertController } from 'ionic-angular';
 	providers: []
 })
 
-export class Form2Page {
+export class SearchSurveys {
 	controls: ControlBase<any>[];
 	form: FormGroup;
 	submitted: any;
@@ -20,7 +20,7 @@ export class Form2Page {
 	constructor(public configService: FormConfigService,
 							public controlsService: ControlsService,
 							public alertCtrl: AlertController
-						){
+						) {
 		this.form = new FormGroup({});
 	}
 
@@ -38,11 +38,11 @@ export class Form2Page {
 
 	submitForm($event){
 		let alert = this.alertCtrl.create({
-      title: 'Success!',
-      subTitle: 'Your form was successfully submitted!',
-      buttons: ['OK']
-    });
-    alert.present();
+			title: 'Success!',
+			subTitle: 'Your form was successfully submitted!',
+			buttons: ['OK']
+		});
+		alert.present();
 		console.log("Success\n", this.submitted);
 	}
 

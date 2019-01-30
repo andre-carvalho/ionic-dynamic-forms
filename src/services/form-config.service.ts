@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class FormConfigService {
-  readonly BASEURL = 'https://s3.amazonaws.com/dev.appseed.io/mobile-apps/demo-angular-dynamic-forms/';
+  readonly BASEURL = 'http://localhost:8100/assets/forms/';
 
   constructor(private http: Http) { }
 
